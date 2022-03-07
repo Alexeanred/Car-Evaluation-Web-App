@@ -10,7 +10,7 @@ st.write("""# CAR EVALUATION APP
 For more details, please visit this page: [Car Evaluation Dataset](http://archive.ics.uci.edu/ml/datasets/Car+Evaluation)
 or [Kaggle Car Evaluation Dataset](https://www.kaggle.com/mykeysid10/car-evaluation/data)""")
 
-st.image(r'Image\Car.jpg',width=600)
+st.image('Car.jpg',width=600)
 
 #sidebar part
 st.sidebar.header("User Input Features")
@@ -54,13 +54,13 @@ prediction_proba = load_clf.predict_proba(input_df)
 
 def imagePrediction(x):
     if x=="unacceptable":
-        st.image(r'Image\unacc.jpg',width=600)
+        st.image('unacc.jpg',width=600)
     elif x=="acceptable":
-        st.image(r'Image\acc.jpg',width=600)
+        st.image('acc.jpg',width=600)
     elif x=="good":
-        st.image(r'Image\good.jpg',width=600)  
+        st.image('good.jpg',width=600)  
     elif x=="very good":
-        st.image(r'Image\verygood.jpg',width=600)  
+        st.image('verygood.jpg',width=600)  
 #display the predicted result
 st.subheader('Prediction')
 Class = np.array(["unacceptable","acceptable","good","very good"])
