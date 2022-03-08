@@ -62,21 +62,24 @@ def imagePrediction(x):
     elif x=="very good":
         st.image('verygood.jpg',width=600)  
 #display the predicted result
-st.subheader('Prediction')
 Class = np.array(["unacceptable","acceptable","good","very good"])
 if st.sidebar.button("Finish input"):
+#prediction part     
+    st.subheader('Prediction')
     my_bar = st.progress(0)
     for percent_complete in range(100):
         time.sleep(0.00000000001)
         my_bar.progress(percent_complete + 1)
     st.write(f"""The evaluation based on the above data: This is a(n) **{Class[int(prediction)]}** car""")
     imagePrediction(Class[int(prediction)])
+#prob part
     st.subheader('Prediction Probability')
     my_bar = st.progress(0)
     for percent_complete in range(100):
         time.sleep(0.00000000000000000000001)
         my_bar.progress(percent_complete + 1)
-    df = pd.DataFrame(prediction_proba,columns=["unacceptable","acceptable","good","very good"])
+    x = np.array([f"{round(prediction_proba[0][i],2)*100} %" for i in range(len(prediction_proba[0]))]).reshape(1,-1)
+    df = pd.DataFrame(x,columns=["unacceptable","acceptable","good","very good"])
     st.dataframe(df) 
 
 
