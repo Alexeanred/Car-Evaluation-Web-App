@@ -78,7 +78,7 @@ if st.sidebar.button("Finish input"):
     for percent_complete in range(100):
         time.sleep(0.00000000000000000000001)
         my_bar.progress(percent_complete + 1)
-    x = np.array([f"{round(prediction_proba[0][i],2)*100} %" for i in range(len(prediction_proba[0]))]).reshape(1,-1)
+    x = np.array([f"{round(prediction_proba[0][i]*100,1)} %" for i in range(len(prediction_proba[0]))]).reshape(1,-1)
     df = pd.DataFrame(x,columns=["unacceptable","acceptable","good","very good"])
     st.dataframe(df) 
 
