@@ -11,4 +11,4 @@ This app is to evaluate which car is acceptable, unacceptable, good or very good
 3. Deploy to **heroku**
 4. Write README github
 
-**To conclude, this is just a simple app and I want to do more interesting things in the future.**
+**To conclude, this is just a simple app and I want to do more interesting things in the future with my friends.**
