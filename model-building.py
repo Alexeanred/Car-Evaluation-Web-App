@@ -17,7 +17,7 @@ df[df.columns] = oe.fit_transform(df[df.columns])
 x = df.drop(['class'], axis = 1)
 y = df['class']
 
-rf = RandomForestClassifier(max_depth = 11,random_state = 48) # Keeping max_depth = 7 to avoid overfitting
+rf = RandomForestClassifier(max_depth = 11,random_state = 48) 
 rf.fit(x,y)
 
 import pickle
