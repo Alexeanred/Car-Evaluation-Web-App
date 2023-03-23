@@ -2,7 +2,7 @@
 **Link app: https://car-evaluation-web-app.herokuapp.com/**  
 **Link colabs: https://colab.research.google.com/drive/176zhlAxgk6a3T2c3DCtAo-mqi_RnwOx9?usp=sharing**
 ## This is my project in AI class at my high school.  
-### Group: Nguyễn Duy Tiến & Châu Lệ Quân 
+### Group: Nguyễn Duy Tiến & Trần Đình Tuấn
 **Motivation: Cars are one of the things that I really enjoy. This dataset is about cars and I can practice my learned skills.**  
 This app is to evaluate which car is acceptable, unacceptable, good or very good. We input the features of a car and we will see the results.
 
